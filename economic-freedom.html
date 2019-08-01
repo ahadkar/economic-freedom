@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+	<style>
+
+	</style>
+	<body onload='init()'>
+		<script src="http://d3js.org/d3.v3.min.js"></script>
+		<script>
+			async function init() {
+				const data = await d3.csv("data/efw-summary.csv");
+
+				data.forEach(function(d) {
+
+					console.log(d)
+				});
+			}
+		</script>
+	</body>
+</html>
